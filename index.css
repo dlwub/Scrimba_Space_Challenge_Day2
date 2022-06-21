@@ -1,0 +1,33 @@
+:root {
+    --pink: #fbe6f4ff;
+    --yellow: #fffad1ff;
+    --green: #e1f0e5ff;
+    --blue: #b5caf9ff;
+    --orange: #f5e6db;
+    --raisin: #2b283aff;
+    --grey: #d4d4d4;
+}
+
+body {
+    background-color: var(--raisin);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 2em;
+}
+.glow {  
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #cff3f8, 0 0 40px #cff3f8, 0 0 50px #cff3f8, 0 0 60px #cff3f8, 0 0 70px #cff3f8;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #cff3f8, 0 0 40px #cff3f8, 0 0 50px #cff3f8, 0 0 60px #cff3f8, 0 0 70px #cff3f8, 0 0 80px #cff3f8;
+  }
+}
